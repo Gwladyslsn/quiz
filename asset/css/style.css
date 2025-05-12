@@ -1,5 +1,42 @@
+.logo {
+    width: 8%;
+}
 
+#question-box {
+    margin: 2rem auto;
+    text-align: center;
+}
 
-.logo{
-    width:8%;
+#question-text{
+    font-size:20px;
+}
+
+#options-container{
+    display:flex;
+    flex-direction:row;
+    width:100%;
+}
+
+.option-btn {
+    display: block;
+    width: 100%;
+    margin: 2rem;
+    padding: 1rem;
+    font-size: 1rem;
+    cursor: pointer;
+    border : solid;
+}
+
+.check{
+    background-color:aqua;
+}
+
+#next-btn {
+    margin-top: 1rem;
+    padding: 0.8rem 1.5rem;
+    font-size: 1rem;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    cursor: pointer;
 }
