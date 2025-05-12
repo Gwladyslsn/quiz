@@ -29,26 +29,40 @@ function afficherQuestion(index) {
         btn.disabled = false;
     });
 
+    checkAnswer();
     document.getElementById('next-btn').disabled = true;
 }
 
-function checkAnswer(){
-    const answers = document.querySelectorAll('.option-btn');
-    answers.forEach(answer =>{
-        answer.addEventListener("click", (event) =>{
+function checkAnswer() {
+    const reponses = document.querySelectorAll('.option-btn');
+
+    reponses.forEach(reponse => {
+        reponse.addEventListener("click", (event) => {
             event.preventDefault();
-            if (event){
-                answer.classList.toggle("check");
-            }
+            reponse.classList.add("check");
+
+            // 2. Délai avant vérification
+            setTimeout(() => {
+                const indexChoisi = parseInt(reponse.dataset.index);
+                const bonneReponse = questions[currentIndex].answer;
+
+                if (indexChoisi === bonneReponse) {
+                    console.log("bonne réponse");
+                    reponse.style.background = "green";
+                } else {
+                    console.log("mauvaise réponse");
+                    reponse.style.background = "red";
+                }
+            }, 2000); 
         });
-    })
+    });
 }
+
+        
 
 // Appel initial
 chargerQuestions();
 
-//verif reponse
-checkAnswer();
 
 });
 
