@@ -32,9 +32,11 @@
             </a>
         </span>
     </div>
-</footer>
+</footer> 
 
-<script src="./asset/js/app.js"></script>
+<?php if (isset($page_script)): ?>
+        <script src="<?php echo $page_script; ?>"></script>
+    <?php endif; ?>
 </body>
 
 </html>

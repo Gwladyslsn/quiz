@@ -1,7 +1,15 @@
+/*GENERAL*/
+
+body{
+    height:fit-content;
+}
+
+/*HEADER*/
 .logo {
     width: 8%;
 }
 
+/*QUIZ*/
 #question-box {
     margin: 2rem auto;
     text-align: center;
