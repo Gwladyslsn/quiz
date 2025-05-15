@@ -1,7 +1,7 @@
 <?php
 # Récupère 10 questions aléatoires (JSON)
 header('Content-Type: application/json');
-require_once 'db.php';
+require_once '_db.php';
 
 try {
     // Récupère le nombre total de questions pour s'assurer qu'il y en a au moins 10

@@ -14,7 +14,7 @@ let visuScore = document.getElementById('score');
 
 async function chargerQuestions() {
     try {
-        const response = await fetch("http://localhost:3000/libs/get_questions.php");
+        const response = await fetch("http://localhost:3000/libs/_get_questions.php");
         const data = await response.json();
         questions = data;
         afficherQuestion(currentIndex); // on affiche la première question une fois les données chargées

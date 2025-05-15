@@ -1,6 +1,7 @@
 <?php
 
-require_once "./templates/_header.php";
+require_once "./templates/header.php";
+require "./libs/_theme.php";
 ?>
 
 
@@ -34,4 +35,4 @@ require_once "./templates/_header.php";
 </body>
 
 <?php
-require_once "./templates/_footer.php";
+require_once "./templates/footer.php";
