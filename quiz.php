@@ -1,6 +1,6 @@
 <?php
 
-require_once "./asset/php/_header.php";
+require_once "./templates/_header.php";
 ?>
 
 
@@ -34,4 +34,4 @@ require_once "./asset/php/_header.php";
 </body>
 
 <?php
-require_once "./asset/php/_footer.php";
+require_once "./templates/_footer.php";
