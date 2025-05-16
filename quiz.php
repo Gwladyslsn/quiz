@@ -2,12 +2,18 @@
 
 require_once "./templates/header.php";
 require "./libs/_theme.php";
+$themes = getAllThemes();
 ?>
+
 
 
 <body>
     <main id="quiz-container" class="quiz">
         <div id="question-box">
+            <h1 id="theme-title">
+                Quiz sur le thème : 
+                
+            </h1>
             <div id="timer-text">Attention, le timer va bientot se lancer</div><br>
             <div id="progress-bar-container" style="background: #eee; height: 10px; width: 100%; margin-top: 5px;">
                 <div id="progress-bar" style="background: #4CAF50; height: 10px; width: 100%;"></div>

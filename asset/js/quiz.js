@@ -12,18 +12,37 @@ let questions = [];
 let result = document.getElementById('result-container');
 let visuScore = document.getElementById('score');
 
+// Récupérer l'ID du thème depuis l'URL
+function getThemeIdFromUrl() {
+    const urlParams = new URLSearchParams(window.location.search);
+    return urlParams.get('theme_id');
+}
+
 async function chargerQuestions() {
+
     try {
-        const response = await fetch("http://localhost:3000/libs/_get_questions.php");
+        const themeId = getThemeIdFromUrl();
+        // Ajouter le paramètre theme_id à l'URL
+        const url = themeId 
+            ? `http://localhost:3000/libs/_get_questions.php?theme_id=${themeId}`
+            : "http://localhost:3000/libs/_get_questions.php";
+
+        const response = await fetch(url);
         const data = await response.json();
         questions = data;
-        afficherQuestion(currentIndex); // on affiche la première question une fois les données chargées
+        afficherQuestion(currentIndex);
+        
+
     } catch (error) {
         console.error("Erreur lors du chargement des questions :", error);
     }
 }
 
+
 function afficherQuestion(index){
+
+    
+
     const questionElement = document.getElementById('question-text');
     const optionsButtons = document.querySelectorAll('.option-btn');
 
