@@ -206,12 +206,74 @@ VALUES
 ("Quel pilote français a piloté pour AlphaTauri en 2022 ?", "Esteban Ocon", "Pierre Gasly", "Lando Norris", "Jean-Éric Vergne", 2,4);
 
 
+INSERT INTO questions (question, option1, option2, option3, option4, answer, id_theme) 
+VALUES
+("Quel est le prénom de Mozart ?", "Franz", "Johann", "Ludwig", "Wolfgang", 4,5),
+("Quel artiste a chanté «Thriller» ?", "Prince", "Michael Jackson", "Stevie Wonder", "Lionel Richie", 2,5),
+("Quel groupe a sorti l’album «The Dark Side of the Moon» ?", "Led Zeppelin", "The Rolling Stones", "Pink Floyd", "Queen", 3,5),
+("Quelle est la nationalité de la chanteuse Björk ?", "Islandaise", "Suédoise", "Norvégienne", "Danoise", 1,5),
+("Quel instrument a 88 touches ?", "L’orgue", "Le synthétiseur", "Le piano", "Le clavecin", 3,5),
+("Quel est le vrai nom de Lady Gaga ?", "Stefani Germanotta", "Sarah Ciccone", "Kate Perry", "Emma Lambert", 1,5),
+("Qui a composé la «Lettre à Élise» ?", "Mozart", "Beethoven", "Chopin", "Liszt", 2,5),
+("Quel groupe chante «Bohemian Rhapsody» ?", "The Beatles", "Genesis", "AC/DC", "Queen", 4,5),
+("Quel rappeur français a sorti l'album «L'Éverest» ?", "Orelsan", "Kaaris", "Soprano", "SCH", 3,5),
+("Quel chanteur est surnommé «le Boss» ?", "Bruce Springsteen", "Bon Jovi", "Elton John", "Bob Dylan", 1,5),
+("Quel duo a chanté «Get Lucky» en 2013 ?", "David Guetta et Rihanna", "Daft Punk et Pharrell Williams", "Calvin Harris et Sam Smith", "Avicii et Aloe Blacc", 2,5),
+("Qui a écrit l’opéra «Carmen» ?", "Verdi", "Bizet", "Puccini", "Berlioz", 2,5),
+("Quel est le genre musical de Bob Marley ?", "Ska", "Jazz", "Reggae", "Soul", 3,5),
+("Quelle chanteuse a sorti «Rolling in the Deep» ?", "Beyoncé", "Amy Winehouse", "Katy Perry", "Adele", 4,5),
+("Quel groupe est surnommé «les Fab Four» ?", "The Rolling Stones", "The Beach Boys", "The Beatles", "The Who", 3,5),
+("Quel compositeur est devenu sourd ?", "Beethoven", "Bach", "Schubert", "Haydn", 1,5),
+("Quel groupe français a chanté «Dernière danse» ?", "Indochine", "Louise Attaque", "Kyo", "Tryo", 3,5),
+("Qui chante «Ne me quitte pas» ?", "Édith Piaf", "Charles Aznavour", "Jacques Brel", "Georges Brassens", 3,5),
+("En quelle année a eu lieu le premier festival de Woodstock ?", "1965", "1969", "1972", "1975", 2,5),
+("Quelle voix féminine est célèbre pour son vibrato puissant et naturel, surnommée «la môme» ?", "Barbara", "Vanessa Paradis", "Édith Piaf", "Zazie", 3,5),
+("Quel instrument utilise des cordes frottées ?", "Harpe", "Guitare", "Piano", "Violon", 4,5),
+("Quel chanteur a popularisé «Imagine» ?", "Paul McCartney", "Elton John", "John Lennon", "Freddie Mercury", 3,5),
+("Qui est la chanteuse principale de Florence + The Machine ?", "Florence Nightingale", "Florence Welch", "Florence Jones", "Florence Griffith", 2,5),
+("Quel groupe a chanté «Smells Like Teen Spirit» ?", "Pearl Jam", "Nirvana", "Radiohead", "Foo Fighters", 2,5),
+("Quel est le nom de scène de Matthieu Chedid ?", "MC", "-X-", "M", "Tété", 3,5),
+("Quel instrument est aussi appelé «les touches d’ivoire» ?", "Piano", "Accordéon", "Orgue", "Xylophone", 1,5),
+("Qui est le compositeur de «La Moldau» ?", "Smetana", "Dvořák", "Tchaïkovski", "Chopin", 1,5);
 
 
-
-
-
-
+INSERT INTO questions (question, option1, option2, option3, option4, answer, id_theme) 
+VALUES
+("Quel film a remporté l’Oscar du meilleur film en 1998 ?", "Titanic", "Shakespeare in Love", "La Ligne verte", "American Beauty", 2,6),
+("Qui joue le rôle principal dans Forrest Gump ?", "Tom Cruise", "Kevin Costner", "Tom Hanks", "Robin Williams", 3,6),
+("Dans Le Seigneur des Anneaux, comment s’appelle l’anneau ?", "L’Anneau de Pouvoir", "L’Anneau de Sauron", "L’Unique Anneau", "L’Anneau Maudit", 1,6),
+("Qui a réalisé Pulp Fiction ?", "Martin Scorsese", "Steven Spielberg", "Guy Ritchie", "Quentin Tarantino", 4,6),
+("Quel est le prénom du personnage principal dans Retour vers le futur ?", "Danny", "Marty", "Rick", "Sam", 2,6),
+("Quel film met en scène un requin tueur ?", "Abyss", "Open Water", "Les Dents de la mer", "The Meg", 3,6),
+("Qui est le compositeur principal des musiques de Star Wars ?", "John Williams", "Hans Zimmer", "Howard Shore", "Ennio Morricone", 1,6),
+("Dans quel film peut-on entendre la réplique : «Je suis ton père» ?", "Star Wars: Un nouvel espoir", "Star Wars: L’Empire contre-attaque", "Star Wars: Le Retour du Jedi", "Rogue One", 2,6),
+("Quel acteur incarne le Joker dans The Dark Knight ?", "Jared Leto", "Joaquin Phoenix", "Heath Ledger", "Jack Nicholson", 3,6),
+("Dans quel film Leonardo DiCaprio lutte contre un ours ?", "Django Unchained", "Le Revenant", "Inception", "Shutter Island", 2,6),
+("Quel est le métier de Julia Roberts dans Pretty Woman ?", "Danseuse", "Serveuse", "Escort girl", "Styliste", 3,6),
+("Quel film d’animation met en scène un rat qui cuisine ?", "Chicken Run", "Le Monde de Nemo", "Les Aristochats", "Ratatouille", 4,6),
+("Qui joue Jack dans Titanic ?", "Leonardo DiCaprio", "Brad Pitt", "Matt Damon", "Johnny Depp", 1,6),
+("Dans Inception, que fait tourner Dom Cobb pour savoir s’il rêve ?", "Un dé", "Une pièce", "Une toupie", "Une montre", 3,6),
+("Quel film est centré sur un vaisseau nommé le Nostromo ?", "Interstellar", "Alien", "2001 : L’Odyssée de l’espace", "Star Trek", 2,6),
+("Qui a réalisé E.T. l’extra-terrestre ?", "George Lucas", "Ridley Scott", "James Cameron", "Steven Spielberg", 4,6),
+("Quel film se déroule presque entièrement dans une salle de tribunal ?", "12 Hommes en colère", "Erin Brockovich", "Philadelphia", "Le Parrain", 1,6),
+("Quelle actrice joue Hermione Granger ?", "Emma Stone", "Emma Thompson", "Emma Watson", "Natalie Portman", 3,6),
+("Qui incarne Iron Man dans le MCU ?", "Mark Ruffalo", "Robert Pattinson", "Robert Downey Jr.", "Chris Evans", 3,6),
+("Dans Matrix, quelle pilule permet de découvrir la vérité ?", "La rouge", "La bleue", "La verte", "La jaune", 1,6),
+("Quel est le titre du premier film Marvel du MCU ? (Dans l'ordre de sortie)", "Hulk", "Iron Man", "Captain America", "Thor", 2,6),
+("Quel film français a pour héros un agent secret maladroit ?", "La Cité de la peur", "Les Visiteurs", "OSS 117", "Le Dîner de cons", 3,6),
+("Dans Le Fabuleux Destin d’Amélie Poulain, où travaille Amélie ?", "Un café", "Une boulangerie", "Une librairie", "Une fleuriste", 1,6),
+("Dans quel film des années 90 découvre-t-on les dinosaures recréés ?", "Le Monde perdu", "Godzilla", "King Kong", "Jurassic Park", 4,6),
+("Qui joue le capitaine Jack Sparrow ?", "Orlando Bloom", "Johnny Depp", "Colin Farrell", "Tom Hardy", 2,6),
+("Dans quel film un clown terrifie les enfants ?", "Freddy", "Conjuring", "Ça", "The Ring", 3,6),
+("Qui est le réalisateur de Inglourious Basterds ?", "Quentin Tarantino", "Zack Snyder", "Ridley Scott", "Wes Anderson", 1,6),
+("Quel est le prénom du héros de Gladiator ?", "Titus", "Maximus", "Aurelius", "Antonius", 2,6),
+("Quel film d’animation Pixar met en scène des émotions ?", "Les Nouveaux Héros", "En avant", "Là-haut", "Vice-Versa", 4,6),
+("Qui a réalisé Avatar ?", "James Cameron", "Steven Spielberg", "J.J. Abrams", "Christopher Nolan", 1,6),
+("Quel est le titre du film sur la création de Facebook ?", "Le Réseau", "Social World", "The Social Network", "Facebook: The Movie", 3,6),
+("Dans Interstellar, quel élément naturel met la Terre en danger ?", "La poussière", "La chaleur", "Le froid", "Les inondations", 1,6),
+("Dans Charmed, quel est le pouvoir de Prue Halliwell ?", "Lire dans les pensées", "Télékinésie", "Figer le temps", "Téléportation", 2,6),
+("Dans Game of Thrones, comment s’appelle l’épée en acier valyrien de Jon Snow ?", "Aiguille", "Longclaw (Longuegriffe)", "Heartsbane (Pointdeguerre)", "Oathkeeper (Féale)", 2,6),
+("Dans Gossip Girl, dans quelle école privée Serena, Blair et leurs amies sont-ils scolarisés au début de la série ?", "St. Jude", "Upper East Academy", "Manhattan Elite School", "Constance Billard", 4,6);
 
 
 

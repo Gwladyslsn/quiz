@@ -30,7 +30,13 @@ async function chargerQuestions() {
         const response = await fetch(url);
         const data = await response.json();
         questions = data;
+
+            
         afficherQuestion(currentIndex);
+        
+        
+
+        
         
 
     } catch (error) {
@@ -41,13 +47,20 @@ async function chargerQuestions() {
 
 function afficherQuestion(index){
 
-    
+    if (!questions === null){
+        console.log("pas de question");
+        
+    }
 
     const questionElement = document.getElementById('question-text');
     const optionsButtons = document.querySelectorAll('.option-btn');
 
     const questionActuelle = questions[index];
     questionElement.textContent = questionActuelle.question;
+    
+
+    
+
 
     // Affiche les 4 options dans les boutons et réinitialise l'état
     optionsButtons.forEach((btn, i) => {
