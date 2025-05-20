@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./asset/css/style.css">
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
     <title>Quiz : fun et ludique !</title>
 </head>
 
@@ -17,8 +18,8 @@
                 <span class="ml-3 text-xl">Ludi'Quiz</span>
             </a>
             <nav class="md:ml-auto md:mr-auto flex flex-wrap items-center text-base justify-center">
-                <a class="mr-5 hover:text-white">First Link</a>
-                <a class="mr-5 hover:text-white">Second Link</a>
+                <a class="mr-5 hover:text-white" id="login" href="./connexion.php">Connexion</a>
+                <a class="mr-5 hover:text-white" id="signin" href="inscription.php">Inscription</a>
             </nav>
         </div>
     </header>

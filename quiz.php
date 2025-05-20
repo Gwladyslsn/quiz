@@ -33,7 +33,8 @@ $themes = getAllThemes();
             <div id="score"></div>
 
             <div id="next">
-                <button id="next-btn" disabled>Suivant</button>
+                <button id="next-btn" disabled>Relancer un quiz sur ce thème ! </button>
+                <button id="next-btn" disabled>Retour accueil</button>
             </div>
         </div>
     </main>

@@ -33,10 +33,9 @@ async function chargerQuestions() {
 
             
         afficherQuestion(currentIndex);
-        
-        
 
-        
+        const nextStep = document.getElementById('next')
+        nextStep.style.display = 'none';
         
 
     } catch (error) {
@@ -47,10 +46,6 @@ async function chargerQuestions() {
 
 function afficherQuestion(index){
 
-    if (!questions === null){
-        console.log("pas de question");
-        
-    }
 
     const questionElement = document.getElementById('question-text');
     const optionsButtons = document.querySelectorAll('.option-btn');
@@ -78,7 +73,7 @@ function afficherQuestion(index){
 }
 
 function startTimer(){
-    totalTime = 15; 
+    totalTime = 5; 
     timeLeft = totalTime;
 
     clearInterval(timer); // S'assurer qu'un timer précédent est effacé
@@ -92,7 +87,13 @@ function startTimer(){
             questionActive = false; // Désactiver les interactions après le temps écoulé
             setTimeout(() => afficherQuestionSuivante(), 2000); // Passer à la question suivante après un délai
         }
+
+        if (timer === 0){
+            nextStep.style.display = 'block';
+        }
     }, 1000);
+
+    
 }
 
 function updateTimerDisplay(){

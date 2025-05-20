@@ -1,12 +1,14 @@
 /*GENERAL*/
 
-body{
-    height:fit-content;
-}
+
 
 /*HEADER*/
 .logo {
     width: 8%;
+}
+
+a{
+    cursor:pointer;
 }
 
 /*QUIZ*/
@@ -48,4 +50,9 @@ body{
     color: white;
     border: none;
     cursor: pointer;
+}
+/*FOOTER*/
+
+.logoFooter{
+    width: 5%;
 }
