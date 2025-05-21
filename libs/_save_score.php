@@ -1,3 +1,0 @@
-<?php
-
-# Enregistre pseudo + score

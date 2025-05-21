@@ -2,8 +2,8 @@
 
 # Récupère 10 questions aléatoires (JSON)
 header('Content-Type: application/json');
-require_once '_db.php';
-require "_theme.php";
+require_once 'pdo.php';
+require "theme.php";
 $themes = getAllThemes();
 
 $themeId = isset($_GET['theme_id']) ? $_GET['theme_id'] : null;

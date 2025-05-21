@@ -1,7 +1,7 @@
 <?php
 
-require_once "./templates/header.php";
-require "./libs/_theme.php";
+require_once "./templates/_header.php";
+require "./libs/theme.php";
 $themes = getAllThemes();
 ?>
 
@@ -42,4 +42,4 @@ $themes = getAllThemes();
 </body>
 
 <?php
-require_once "./templates/footer.php";
+require_once "./templates/_footer.php";

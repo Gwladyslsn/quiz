@@ -24,8 +24,8 @@ async function chargerQuestions() {
         const themeId = getThemeIdFromUrl();
         // Ajouter le paramètre theme_id à l'URL
         const url = themeId 
-            ? `http://localhost:3000/libs/_get_questions.php?theme_id=${themeId}`
-            : "http://localhost:3000/libs/_get_questions.php";
+            ? `http://localhost:3000/libs/get_questions.php?theme_id=${themeId}`
+            : "http://localhost:3000/libs/get_questions.php";
 
         const response = await fetch(url);
         const data = await response.json();

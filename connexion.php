@@ -1,17 +1,19 @@
 <?php
 
-require_once "./templates/header.php";
+require_once "./templates/_header.php";
 ?>
 
-<section class="text-gray-400 bg-gray-900 body-font">
+<section class="text-gray-400 bg-gray-900 body-font pb-100">
     <div class="container px-5 py-24 mx-auto flex flex-wrap items-center ">
-        <div class="lg:w-3/6 md:w-1/2 md:pr-16 lg:pr-0 pr-0 m-auto">
+        <div class=" md:pr-16 lg:pr-0 pr-0 m-auto">
             <h1 class="title-font font-medium text-3xl text-white">Connectez-vous ici ! </h1>
             <p class="leading-relaxed mt-4">Sauvegardez vos scores et comparez vos résultats d'un quiz à l'autre</p>
         </div>
+    </div>
 
 <!--FORMULAIRE CONNEXION-->
-        <form class="lg:w-2/6 md:w-1/2 bg-gray-800  bg-opacity-50 rounded-lg p-8 flex flex-col md:ml-auto w-full mt-10 md:mt-0">
+    <div>
+        <form class="lg:w-2/6 md:w-1/2 m-auto bg-gray-800  bg-opacity-50 rounded-lg p-8 flex flex-col md:ml-auto w-full mt-10 md:mt-0">
             <h2 class="text-white text-lg font-medium text-center title-font mb-5">Connexion</h2>
             <div class="relative mb-4">
                 <label for="email" class="leading-7 text-sm text-gray-400">Email</label>
@@ -28,5 +30,5 @@ require_once "./templates/header.php";
 
 <?php
 
-require_once "./templates/footer.php";
+require_once "./templates/_footer.php";
 ?>

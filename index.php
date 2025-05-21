@@ -1,7 +1,7 @@
 <?php
 
-require_once "./templates/header.php";
-require "./libs/_theme.php";
+require_once "./templates/_header.php";
+require "./libs/theme.php";
 $themes = getAllThemes();
 ?>
 
@@ -18,7 +18,7 @@ $themes = getAllThemes();
                 </div>
                 <div class="flex flex-wrap -m-4">
                     <?php foreach($themes as $index=>$theme):?>
-                    <?php require "./templates/theme_item.php";?>
+                    <?php require "./templates/_theme_item.php";?>
                     <?php endforeach; ?>
                 </div>
 
@@ -35,4 +35,4 @@ $themes = getAllThemes();
 
 
 <?php
-require_once "./templates/footer.php";
+require_once "./templates/_footer.php";
