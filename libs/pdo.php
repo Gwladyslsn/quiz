@@ -2,15 +2,12 @@
 
 #Connexion à la base de données
 
-$host = 'localhost';
-$dbname = 'quiz_dynamique';
-$user = 'root';
-$pass = '';
-
-try {
-    $pdo = new PDO("mysql:host=$host;dbname=$dbname;charset=utf8mb4", $user, $pass);
-    // Activer les erreurs PDO
-    $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-} catch (PDOException $e) {
-    die("Erreur de connexion à la base de données : " . $e->getMessage());
+try
+{
+    $config = parse_ini_file(__DIR__ . "/../.env");
+    $pdo = new PDO("mysql:dbname={$config["db_name"]};host={$config["db_host"]};charset=utf8mb4", $config["db_user"], $config["db_password"]);
+}
+catch (Exception $e)
+{
+die('Erreur : ' . $e->getMessage());
 }

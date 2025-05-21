@@ -17,15 +17,15 @@ function verifyUser(array $user):array
 {
     $errors = [];
 
-    if(isset($user["pseudo_user]"])){
+    if(isset($user["pseudo_user"])) {
         if($user["pseudo_user"] === ""){
-            $errors["pseudo_user"] = "Le champ Pseudo ne doit pas être vide";
+            $errors["pseudo_user"] = "Le champ Pseudo ne doit pas etre vide";
         }
     }else{
         $errors["pseudo_user"] = "Il manque le champ Pseudo";
     }
 
-    if (count($errors)){
+    if(count($errors)){
         return $errors;
     }
     return $errors;
