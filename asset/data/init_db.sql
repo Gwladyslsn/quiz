@@ -31,6 +31,12 @@ CREATE TABLE user(
         ,CONSTRAINT user_PK PRIMARY KEY (id_user)
 );
 
+ALTER TABLE `user`
+ADD mail_user VARCHAR (100) NOT NULL;
+
+ALTER TABLE `user`
+CHANGE peusdo_user pseudo_user VARCHAR (25) NOT NULL
+
 CREATE TABLE quiz(
     id_quiz INT AUTO_INCREMENT NOT NULL,
     date_quiz DATE NOT NULL,
