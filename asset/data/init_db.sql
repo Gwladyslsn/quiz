@@ -170,6 +170,12 @@ VALUES
 ("Quel est le poste principal de N’Golo Kanté ?", "Attaquant", "Milieu défensif", "Défenseur central", "Gardien", 2,3),
 ("Quel est le club formateur de Zinédine Zidane ?", "Marseille", "Bordeaux", "Cannes", "Monaco", 3,3);
 
+
+UPDATE questions
+SET answer = 1
+WHERE id_question = 88;
+
+
 INSERT INTO questions (question, option1, option2, option3, option4, answer, id_theme) 
 VALUES
 ("En 2025, quel pilote détient le record de victoires en Grand Prix ?", "Ayrton Senna", "Michael Schumacher", "Lewis Hamilton", "Alain Prost", 3,4),
