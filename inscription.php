@@ -5,10 +5,21 @@ require_once "libs/user.php";
 
 $errors = [];
 if ($_SERVER["REQUEST_METHOD"] === "POST") {
+    $pseudo_user = $_POST["pseudo_user"] ?? '';
+    $mail_user = $_POST["mail_user"] ?? '';
+    $mdp_user = $_POST["mdp_user"] ?? '';
+
     $errors = verifyUser($_POST);
 
-    var_dump($errors);
+    if(empty($errors)){
+        if(addUser($pdo, $pseudo_user, $mail_user, $mdp_user)){
+            var_dump("Inscription réussie");
+        }else{
+            $errors[] = "Une erreur est survenue";
+        }
+    }
 };
+
 
 
 ?>

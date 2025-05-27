@@ -286,9 +286,11 @@ VALUES
 ("Dans Gossip Girl, dans quelle école privée Serena, Blair et leurs amies sont-ils scolarisés au début de la série ?", "St. Jude", "Upper East Academy", "Manhattan Elite School", "Constance Billard", 4,6);
 
 
+ALTER TABLE user
+MODIFY COLUMN date_inscription DATETIME DEFAULT CURRENT_TIMESTAMP;
 
-
-
+ALTER TABLE user
+MODIFY COLUMN mdp_user VARCHAR(255) NOT NULL;
 
 
 
