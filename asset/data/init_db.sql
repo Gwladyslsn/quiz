@@ -1,4 +1,3 @@
--- Active: 1744105221537@@127.0.0.1@3306@quiz_dynamique
 CREATE DATABASE quiz_dynamique;
 
 USE quiz_dynamique;
@@ -12,16 +11,15 @@ CREATE TABLE theme_quiz(
 CREATE TABLE questions(
     id_question INT AUTO_INCREMENT NOT NULL,
     question VARCHAR (255) NOT NULL,
-    option1 VARCHAR (50) NOT NULL,
-    option2 VARCHAR (50) NOT NULL,
-    option3 VARCHAR (50) NOT NULL,
-    option4 VARCHAR (50) NOT NULL,
+    option1 VARCHAR (255) NOT NULL,
+    option2 VARCHAR (255) NOT NULL,
+    option3 VARCHAR (255) NOT NULL,
+    option4 VARCHAR (255) NOT NULL,
     answer INT NOT NULL,
     id_theme INT NOT NULL
         ,CONSTRAINT questions_PK PRIMARY KEY (id_question)
         ,CONSTRAINT quiz_theme_quiz_FK FOREIGN KEY (id_theme) REFERENCES theme_quiz(id_theme)
-)
-
+);
 
 CREATE TABLE user(
     id_user INT AUTO_INCREMENT NOT NULL,
@@ -300,3 +298,6 @@ SELECT * FROM user;
 SELECT * FROM quiz;
 SELECT * FROM Choisir;
 SELECT * FROM Composer;
+
+DROP * FROM quiz_dynamique;
+

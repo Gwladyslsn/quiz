@@ -17,8 +17,8 @@
                 <span class="ml-3 text-xl">Ludi'Quiz</span>
             </a>
             <nav class="md:m-auto flex text-base">
-                <a class="mr-5 hover:text-white" id="login" href="./connexion.php">Connexion</a>
-                <a class="mr-5 hover:text-white" id="signin" href="inscription.php">Inscription</a>
+                <a class="mr-5 hover:text-white" id="login" href="../connexion.php">Connexion</a>
+                <a class="mr-5 hover:text-white" id="signin" href="../inscription.php">Inscription</a>
             </nav>
         </div>
     </header>

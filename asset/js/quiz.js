@@ -24,12 +24,14 @@ async function chargerQuestions() {
         const themeId = getThemeIdFromUrl();
         // Ajouter le paramètre theme_id à l'URL
         const url = themeId 
-            ? `http://localhost:3000/libs/get_questions.php?theme_id=${themeId}`
-            : "http://localhost:3000/libs/get_questions.php";
+            ? `http://localhost:8000/libs/get_questions.php?theme_id=${themeId}`
+            : "http://localhost:8000/libs/get_questions.php";
 
         const response = await fetch(url);
         const data = await response.json();
         questions = data;
+        
+        
 
             
         afficherQuestion(currentIndex);
@@ -54,16 +56,13 @@ function afficherQuestion(index){
     questionElement.textContent = questionActuelle.question;
     
 
-    
-
-
-    // Affiche les 4 options dans les boutons et réinitialise l'état
+    // Affiche les 4 options dans les boutons et réinitialise reponse
     optionsButtons.forEach((btn, i) => {
         btn.textContent = questionActuelle[`option${i + 1}`];
         btn.disabled = false;
-        btn.classList.remove("check"); // Supprime la classe de sélection précédente
-        btn.style.background = ""; // Réinitialise la couleur de fond
-        btn.dataset.index = i + 1; // Assurez-vous que l'index est correct
+        btn.classList.remove("check"); 
+        btn.style.background = ""; 
+        btn.dataset.index = i + 1; 
     });
 
     reponseChoisie = null; // Réinitialise la réponse choisie pour la nouvelle question

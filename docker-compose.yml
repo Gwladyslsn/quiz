@@ -14,9 +14,9 @@ services:
     container_name: mysql
     environment:
       MYSQL_ROOT_PASSWORD: pass
-      MYSQL_DATABASE: demo
-      MYSQL_USER: test
-      MYSQL_PASSWORD: pass
+      MYSQL_DATABASE: quiz_dynamique
+      MYSQL_USER: gwld
+      MYSQL_PASSWORD: passgwld
     ports:
       - 3307:3306
   phpma:
@@ -25,7 +25,7 @@ services:
     environment:
       PMA_ARBITRARY: 1
       PMA_HOST: db
-      PMA_USER: root
-      PMA_PASSWORD: 
+      PMA_USER: gwld
+      PMA_PASSWORD:
     ports:
       - 8899:80
