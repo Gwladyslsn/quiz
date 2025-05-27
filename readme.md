@@ -10,4 +10,3 @@ Reste :
 
 modif  : 
 - revoir le responsive
-- changer la valeur d'une reponse foot (entraineur equipe france 2018)
