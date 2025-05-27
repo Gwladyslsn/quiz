@@ -1,0 +1,31 @@
+services:
+  php:
+    image: php:8.2-apache
+    container_name: php_apache
+    ports:
+      - 8000:80
+    volumes:
+      - ./:/var/www/html 
+    build:
+      context: .
+      dockerfile: Dockerfile
+  db:
+    image: mysql:8.0
+    container_name: mysql
+    environment:
+      MYSQL_ROOT_PASSWORD: pass
+      MYSQL_DATABASE: demo
+      MYSQL_USER: test
+      MYSQL_PASSWORD: pass
+    ports:
+      - 3307:3306
+  phpma:
+    image: phpmyadmin/phpmyadmin
+    container_name: phpmyadmin2
+    environment:
+      PMA_ARBITRARY: 1
+      PMA_HOST: db
+      PMA_USER: root
+      PMA_PASSWORD: 
+    ports:
+      - 8899:80
