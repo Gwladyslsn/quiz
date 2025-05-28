@@ -72,11 +72,12 @@ function afficherQuestion(index){
 }
 
 function startTimer(){
-    totalTime = 5; 
+    totalTime = 20; 
     timeLeft = totalTime;
 
-    clearInterval(timer); // S'assurer qu'un timer précédent est effacé
+    clearInterval(timer);// S'assurer qu'un timer précédent est effacé
     timer = setInterval(()=>{
+        
         timeLeft--;
         updateTimerDisplay() // mettre à jour le timer en fonction nb secondes passées
 
@@ -85,10 +86,6 @@ function startTimer(){
             clearInterval(timer); // affichage timer fini
             questionActive = false; // Désactiver les interactions après le temps écoulé
             setTimeout(() => afficherQuestionSuivante(), 2000); // Passer à la question suivante après un délai
-        }
-
-        if (timer === 0){
-            nextStep.style.display = 'block';
         }
     }, 1000);
 

@@ -12,7 +12,9 @@ $themes = getAllThemes();
         <div id="question-box">
             <h1 id="theme-title">
                 Quiz sur le thème : 
-                
+                <?php foreach($themes as $index=>$theme):?>
+                    <?= $theme["nom_theme"] ;?>
+                    <?php endforeach; ?>                
             </h1>
             <div id="timer-text">Attention, le timer va bientot se lancer</div><br>
             <div id="progress-bar-container" style="background: #eee; height: 10px; width: 100%; margin-top: 5px;">
@@ -38,8 +40,9 @@ $themes = getAllThemes();
             </div>
         </div>
     </main>
-<?php $page_script = './asset/js/quiz.js'; ?>
-</body>
+    </body>
+<?php //$page_script = './asset/js/quiz.js'; ?>
+<script src="./asset/js/quiz.js"></script>
 
 <?php
 require_once "./templates/_footer.php";

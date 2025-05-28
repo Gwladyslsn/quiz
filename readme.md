@@ -3,8 +3,8 @@ Création quiz dynamique avec HTML, CSS, JS et PHP pour débutant.
 Reste : 
 
 - Continuer systeme de login / create account : 
-    - verifier si compte existant lors de l'inscription
-    - verifier l'entrée des données en JS + en PHP 
+    - verifier l'entrée des données en JS + en PHP pour la connexion 
+    - si connecté, rediriger vers page acceuil mais changer le header 
 
     Si compte : 
 - sauvegarde score 
